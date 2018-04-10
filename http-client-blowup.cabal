@@ -1,0 +1,17 @@
+name:                http-client-blowup
+version:             0.1.0.0
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable http-client-blowup
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  ghc-options:         -rtsopts "-with-rtsopts=-sstderr -K1K -A500M"
+  build-depends:       base >= 4.7 && < 5,
+                       bytestring,
+                       data-default,
+                       http-client,
+                       http-client-tls,
+                       http-types

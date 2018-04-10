@@ -1,0 +1,7 @@
+resolver: lts-11.0
+packages:
+- '.'
+
+# nix:
+#   packages:
+#     - zlib
